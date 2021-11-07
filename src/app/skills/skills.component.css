@@ -1,0 +1,17 @@
+.border{
+border: 10px solid grey;
+border-radius: 50px;
+
+}
+.containerinside{
+	padding: 25px;
+}
+.background{
+	background-image: url('/assets/dark6.jpg');
+	
+
+
+}
+.subheadings{
+	font-size: 30px;font-family: 'Lato', sans-serif;
+}

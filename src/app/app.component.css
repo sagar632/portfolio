@@ -1,0 +1,30 @@
+.imagee{
+	  background-image: url('/assets/dark2.jpg');
+  background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	width: 100vw;
+	
+}
+h1,p{
+	color: white;
+	font-family: 'Mochiy Pop One', sans-serif;
+}
+.topimage{
+	height: 100%;
+}
+
+.hero-image {
+ background-image: url('/assets/dark2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text{
+	border-left : 5px solid grey;
+	padding-left: 10px;
+}
+
+

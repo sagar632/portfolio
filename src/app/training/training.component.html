@@ -1,0 +1,65 @@
+
+<div class="row  background">
+<div class="row">
+		<div class="col-12">
+			<div class="container">
+				<div data-aos="zoom-out" data-aos-duration="1500"><h3 class="text-left mt-md-2 mt-1 headings" >Trainings</h3></div>
+			</div>
+			
+
+		</div>
+
+	</div>
+	
+
+
+<div >{{tra |async}}
+<div class="container">
+<div class="container mb-md-3 mb-3"  >
+<div data-aos="fade-down"
+     data-aos-easing="linear" data-aos-delay="1000"
+     data-aos-duration="4000">
+	
+<div  class="card mt-md-4 mt-3"*ngFor='let tr of tra'(click)=open(tr)>
+    <div class="card-horizontal">
+    	<div class="row h-100">
+        <div class="img-square-wrapper col-md-2 my-auto">
+            <img [src]="tr.imageurl" [alt]="tr.title" class="img-thumbnail float-md-right "width="100%"height="100%" >
+        </div>
+        <div class="card-body col-md-10">
+            <h4 class="card-title">{{tr.title}}</h4>
+            <p class="card-text">{{tr.description}}</p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+	<!--<div class ='row cardd ' >
+		<div class="" >
+     <div (click)=open(tr)>
+		<div class="row" data-toggle="modal" data-target="#myModal">
+		<div class="col-12  col-md-4 justify-content-center">
+			<img [src]="tr.imageurl" [alt]="tr.title" class="img-thumbnail float-md-right "width="250"height="250" >
+		</div>
+		<div class="col border float-left">
+			<div class="row">
+				{{tr.title}}
+				<br>
+				{{tr.description}}
+			</div>
+			
+		
+		</div>
+	</div>
+
+	</div> 
+</div>
+	</div>-->

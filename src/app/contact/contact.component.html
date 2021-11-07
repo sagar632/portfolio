@@ -1,0 +1,148 @@
+<div class="background">
+	<div class="row">
+<div class="container">
+
+	<div class="row text-center">
+		<div data-aos="zoom-out" data-aos-duration="1500" class="col mb-2 mb-md-3"style="color:white ;font-weight: bold; font-size: 30px;opacity: 1.0;z-index: 10">
+			
+		
+			Contact 
+		</div>
+	</div>
+
+		
+	<div data-aos="zoom-in-down" data-aos-duration="2500"><div class="container pl-md-5 pl-3">
+	<form class="mb-md-2 mb-2 p-md-4 p-3" [formGroup]="contactForm" (ngSubmit)=submit()>
+		
+			<div class="row">
+				<div class="offset-md-2  col-md-4 col-12">
+					<label for="first-name"class="textf">First Name: </label>
+  					<input  id="first-name" type="text" class="form-control" formControlName="firstname" required>
+  					
+
+
+  					<!--<div *ngIf="contactForm.firstname.invalid && (firstname.dirty || firstname.touched)"
+						    class="alert alert-danger">
+
+						  <div *ngIf="firstname.errors?.required">
+						    Firtname is required.
+						  </div>
+						  <div *ngIf="firstname.errors?.minlength">
+						    Lastname must be at least 4 characters long.
+						  </div>
+					</div>-->
+				</div>
+				<div class="col-md-4 col-12 ">
+					<label for="last-name"class="textf">Last Name: </label>
+  					<input id="last-name" class="form-control" type="text" formControlName="lastname" required>
+
+
+  					<!--	<div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)"
+						    class="alert alert-danger">
+
+						  <div *ngIf="firstname.errors?.required">
+						    Lastname is required.
+						  </div>
+						  <div *ngIf="firstname.errors?.minlength">
+						    Lastname must be at least 4 characters long.
+						  </div>
+						</div>
+					-->
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 offset-md-2 col-12">
+					<label for="email"class="textf">Email: </label>
+  					<input id="email"class="form-control"  type="text" formControlName="email" required>
+
+
+
+  						<!--<div *ngIf="email.invalid && (email.dirty || email.touched)"
+						    class="alert alert-danger">
+
+						  <div *ngIf="email.errors?.required">
+						    Email is required.
+						  </div>
+						  <div *ngIf="email.errors?.email">
+						   Invalid Email address
+						  </div>
+					</div>-->
+
+				</div>
+
+				<div class="col-md-4 col-12">
+					<label for="oname"class="textf">Organization Name: </label>
+  					<input id="oname"class="form-control"  type="text" formControlName="organizationname" >
+
+  						<!--
+  						<div *ngIf="organizationname.invalid && (organizationname.dirty || organizationname.touched)"
+						    class="alert alert-danger">
+
+						  
+						  <div *ngIf="organizationname.errors?.minlength">
+						    Name must be at least 4 characters long.
+						  </div>
+					</div>-->
+
+
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="offset-md-2 col-12 col-md-4"><label for="phonenumber"class="textf">Phone Number: </label>
+
+				<input id="phonenumber"class="form-control"  type="tel" formControlName="phoneNumber" required></div>
+				
+					<div class=" col-12 col-md-4"><label for="address"class="textf">Address: </label>
+
+				<input id="address"class="form-control"  type="text" formControlName="address" required></div>
+					<!--
+					<div *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)"
+						    class="alert alert-danger">
+
+						  <div *ngIf="phoneNumber.errors?.required">
+						    Firtname is required.
+						  </div>
+						  <div *ngIf="phoneNumber.errors?.minlength">
+						    Name must be at least 4 characters long.
+						  </div>
+					</div>-->
+
+			</div>
+			<div class="row mb-md-2 mb-2">
+				<div class=" offset-md-2">
+					<label for="remarks" class="textf d-block rounded">Remarks:</label>
+					<textarea name="remarks"rows="2"class="col-md-8 "></textarea>
+			</div>
+		</div>
+
+			<div class="row mt-md-2 mt-1 mb-md-2 mb-2">
+
+							<div class="btn-group offset-4 mt-md-4 mt-2">
+								
+								  <button type="submit" class="btn btn-success col-2"[disabled]="!contactForm.valid" disabled>Submit</button>
+								 
+								  <button type="reset" class="btn btn-danger ml-2 col-2">Reset</button>
+								 
+							</div>
+						</div>
+			
+
+
+			
+
+			
+	</form>
+</div>
+	</div>
+
+</div>
+	</div>
+</div>
+
+
+
+
+

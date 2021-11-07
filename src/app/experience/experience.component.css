@@ -1,0 +1,12 @@
+.cardd{
+
+}
+.background{
+	background-image: url('/assets/dark9.jpg');
+	
+
+
+}
+.card:hover{
+	margin: -10px;
+}

@@ -1,0 +1,85 @@
+<div class="row background">
+<div class="row">
+		<div class="col-12">
+			<div class="container">
+			<div data-aos="zoom-out" data-aos-duration="1500"><h3 class="text-left headings mt-md-2 mt-1" >Projects</h3></div>
+		</div>
+
+		</div>
+
+	</div>
+<div class="mb-md-4 mb-3">{{exp |async}}
+<div class="container">
+<div class="container"  >
+<div data-aos="fade-down"
+     data-aos-easing="linear" data-aos-delay="1000"
+     data-aos-duration="4000">
+	
+<div  class="card mt-md-4 mt-3"*ngFor='let ex of exp'(click)=open(ex)>
+    <div class="card-horizontal">
+    	<div class="row h-100">
+        <div class="img-square-wrapper col-md-2 my-auto">
+            <img [src]="ex.imageurl" [alt]="ex.title" class="img-thumbnail float-md-right "width="100%"height="100%" >
+        </div>
+        <div class="card-body col-md-10">
+            <h4 class="card-title">{{ex.projectTitle}}</h4>
+            <p class="card-text">{{ex.projectDesc}}</p>
+            <div class="row">
+				<span><a [href]="ex.githubLink" ><button type="button"class="btn btn-outline-primary " >Github link</button></a>
+				<a [href]="ex.referenceLink" class="ml-5"><button type="button" class="btn btn-outline-success">References</button></a></span>
+				
+			</div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<!--
+<div class="container">
+<div class="container">
+
+	<div *ngFor='let ex of exp' >
+		
+	
+		<div  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+
+<div (click)=open(ex)>
+			<div class="row cardd" >
+		<div class="col-12  col-md-4 justify-content-center">
+			<img src="../assets/aimage.jpg" alt="project image" class="img-thumbnail mx-auto d-block "width="250"height="250" >
+		</div>
+		<div class="col-12 col-md-8">
+			<div class="row">
+				{{ex.projectTitle}}
+				<br>
+				{{ex.technologyUsed}}
+			</div>
+			<div class="row">
+				{{ex.projectDesc}}
+			</div>
+			<div class="row">
+				<span><a [href]="ex.githubLink">Github link</a>
+				<a [href]="ex.referenceLink" class="ml-5">References</a></span>
+				
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+</div>
+</div>
+</div>
+</div>
+-->
+</div>
